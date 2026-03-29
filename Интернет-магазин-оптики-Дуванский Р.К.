@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Интернет‑магазин оптики Дуванского, здесь вы найдёте всё !</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Моя Шапка -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="site-branding">
+                <a href="#" class="site-title">ПРИZ — оптика Дуванского</a>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <button class="nav-toggle" id="navToggle" aria-label="Меню">
+                    ☰
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#hero">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#products">Категории</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#blog">Блог</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Гланая -->
+    <section class="hero" id="hero">
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <h1>ПРИZ — чёткость зрения без границ</h1>
+                <p>
+                    Оптика Дуванского подберёт линзы и очки для повседневной жизни, работы и спорта — с учётом ваших индивидуальных особенностей зрения и образа жизни. Мы поможем найти решение для любых задач: будь то чёткость взгляда за рулём, комфорт при работе за компьютером или надёжная защита глаз во время тренировок..
+                </p>
+                <a href="#products" class="btn btn-primary">Выбрать очки</a>
+            </div>
+            <div class="hero-image-wrapper">
+                <img
+                    src="Сайт_курсовая\c4dd72702b7711f1a18e2a9768a85627_1.jpg"
+                    alt="Современные очки в оптике ПРИZ"
+                    class="hero-image"
+                />
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- ИНФОРМАЦИЯ О КОМПАНИИ / МОЯ КОМАНДА ПРИZ-321 -->
+        <section class="section section-about" id="about">
+            <div class="container two-columns">
+                <div class="column">
+                    <img
+                        src="https://duvanskiyrus-umxks.wordpress.com/wp-content/uploads/2026/03/d09ed0bfd182d0b8d0bad0b0-d094d183d0b2d0b0d0bdd181d0bad0bed0b3d0be-69c92879207c0.png"
+                        alt="Команда оптики ПРИZ"
+                        class="img-responsive"
+                    />
+                </div>
+                <div class="column">
+                    <h2>Команда</h2>
+                    <p>
+                        Мы развиваем оптику ПРИZ, чтобы сделать современное качество зрения доступным каждому. Наши специалисты подбирают решения, учитывая образ жизни, привычки и индивидуальные особенности — потому что для нас каждый клиент уникален.
+
+Представьте: вы больше не щуритесь, пытаясь разглядеть вывеску, не испытываете дискомфорта после долгого дня за экраном, а каждое утро встречаете мир с чёткостью и ясностью. Это не мечта — это реальность, которую мы создаём для вас.
+
+Неважно, проводите ли вы дни в офисе, путешествуете, занимаетесь спортом или просто наслаждаетесь прогулкой — у нас найдётся идеальное оптическое решение именно для вас. В команде ПРИZ мы верим: хорошее зрение — это свобода видеть всё, что важно, и наслаждаться каждым моментом без ограничений.
+                    </p>
+                    <a href="#services" class="btn btn-outline">Подробнее здесь</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПРОДУКТЫ МОЕЙ КОМПАНИИ -->
+        <section class="section section-products" id="products">
+            <div class="container">
+                <h2 class="section-title">Категории товаров</h2>
+                <div class="cards-grid">
+                    <article class="card card-cover">
+                        <div class="card-media">
+                            <img
+                                src="https://duvanskiyrus-umxks.wordpress.com/wp-content/uploads/2026/03/d09ed0bfd182d0b8d0bad0b0-d094d183d0b2d0b0d0bdd181d0bad0bed0b3d0be-69c92879207c0.png"
+                                alt="Контактные линзы"
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h3>Контактные линзы</h3>
+                            <p>
+                                Ежедневные, двухнедельные и месячные линзы для разных задач и уровней чувствительности глаз. Мы поможем подобрать оптимальный вариант с учётом вашего образа жизни и индивидуальных особенностей зрения.
+                            </p>
+                            <a href="#" class="card-link">Смотреть линзы</a>
+                        </div>
+                    </article>
+
+                    <article class="card card-cover">
+                        <div class="card-media">
+                            <img
+                                src="https://duvanskiyrus-umxks.wordpress.com/wp-content/uploads/2026/03/d09ed0bfd182d0b8d0bad0b0-d094d183d0b2d0b0d0bdd181d0bad0bed0b3d0be-69c92879611bd.png"
+                                alt="Оправа очков"
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h3>Оправа очков</h3>
+                            <p>
+                                Дизайнерские и классические оправы для повседневной носки, работы и спорта — у нас вы найдёте решение на любой случай. Подберём модель, которая подчеркнёт ваш стиль и обеспечит комфорт в любых условиях.
+                            </p>
+                            <a href="#" class="card-link">Выбрать оправу</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕРВИСЫ -->
+        <section class="section section-services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Услуги</h2>
+                </div>
+                <div class="cards-grid">
+                    <article class="card">
+                        <div class="card-media">
+                            <img
+                                src="https://duvanskiyrus-umxks.wordpress.com/wp-content/uploads/2026/03/d09ed0bfd182d0b8d0bad0b0-d094d183d0b2d0b0d0bdd181d0bad0bed0b3d0be-69c92879611bd.png"
+                                alt="Компьютерная диагностика зрения"
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h3>Компьютерная диагностика</h3>
+                            <p>
+                                Компьютерная диагностика зрения на современном и передовом оборудовании
+                                с расшифровкой результатов нашего опытного специалиста компании Дуванского !
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-media">
+                            <img
+                                src="https://duvanskiyrus-umxks.wordpress.com/wp-content/uploads/2026/03/d09ed0bfd182d0b8d0bad0b0-d094d183d0b2d0b0d0bdd181d0bad0bed0b3d0be-69c928798aac1.png"
+                                alt="Подбор очков и линз"
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h3>Подбор очков и линз</h3>
+                            <p>
+                                Подбор очков и контактных линз, обучение уходу и правилам
+                                ношения для максимального комфорта.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- РЕКИ -->
+        <section class="section section-testimonials">
+            <div class="container testimonial-inner">
+                <div class="testimonial-image">
+                    <div class="avatar-placeholder"></div>
+                </div>
+                <div class="testimonial-content">
+                    <h2 class="testimonial-quote">
+                        «Очень довольна результатом, с линзами от компании Дуванского я впервые весь день за компьютером провожу без
+                        усталости в глазах !»
+                    </h2>
+                    <p class="testimonial-name">— Аня Ардор</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ГАЛЛЕРЕЯ -->
+        <section class="section section-gallery">
+            <div class="container">
+                <h2 class="section-title">Галерея</h2>
+                <div class="gallery-grid">
+                    <img
+                        src="Сайт_курсовая\c4dd72702b7711f1a18e2a9768a85627_1.jpg"
+                        alt="Офтальмолог компании ПРИZ-321 проверяет зрение"
+                    />
+                    <img
+                        src="Сайт_курсовая\1.png"
+                        alt="Дневные линзы крупным планом"
+                    />
+                    <img
+                        src="Сайт_курсовая\2.png"
+                        alt="Премиальные оправы"
+                    />
+                    <img
+                        src="Сайт_курсовая\3.png"
+                        alt="Диагностическое оборудование"
+                    />
+                    <img
+                        src="Сайт_курсовая\4.jpg"
+                        alt="Офтальмолог компании ПРИZ-321 проверяет зрение"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- БЛОГ -->
+        <section class="section section-blog" id="blog">
+            <div class="container two-columns">
+                <div class="column">
+                    <h2>Блог</h2>
+                    <p>
+                        Полезные советы по выбору очков, линз и уходу за зрением, а также новости оптики и современные технологии — это комплекс знаний, который помогает сохранить здоровье глаз, подобрать комфортную оптику и использовать последние достижения в области коррекции зрения.
+                    </p>
+                </div>
+                <div class="column">
+                    <!-- Здесь я использую блок Query. В статичной версии — заглушки карточек. -->
+                    <article class="post-preview">
+                        <h3><a href="#">Как выбрать очки для работы за компьютером</a></h3>
+                        <p>
+                           Узнайте, какие покрытия и диоптрии помогут снизить нагрузку на глаза — и обеспечьте себе чёткое, комфортное зрение в любых условиях...
+                        </p>
+                    </article>
+                    <article class="post-preview">
+                        <h3><a href="#">Чем отличаются дневные и месячные линзы</a></h3>
+                        <p>
+Разбираемся в ключевых отличиях, плюсах и минусах разных типов линз — чтобы вы могли сделать осознанный выбор в пользу комфорта и чёткости зрения...
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- КОНТАКТЫ -->
+        <section class="section section-contact" id="contact">
+            <div class="container two-columns">
+                <div class="column">
+                    <h2>Контакты</h2>
+                    <p class="contact-info">
+                        Телефон: <a href="tel:+70000000000">+7 (989) 635‑48‑04</a><br />
+                        E-mail: <a href="mailto:duvanskiy.rus@gmail.com">duvanskiy.rus@gmail.com</a>
+                    </p>
+                    <p class="contact-address">
+                        ул. Приз, д.321, магазин-оптики.
+                    </p>
+                </div>
+                <div class="column">
+                    <!-- Статический аналог формы Jetpack -->
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ФУТЕР МОЕГО САЙТА -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <nav class="footer-nav">
+                <a href="#hero">Главная</a>
+                <a href="#about">О нас</a>
+                <a href="#services">Услуги</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+            <div class="footer-social">
+                <a href="https://t.me/@RucifIKaTor" aria-label="Telegram">TG</a>
+                <a href="https://vk.com/rusiflkator" aria-label="VK">VK</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Мобильное меню !
+const navToggle = document.getElementById("navToggle");
+const navList = document.querySelector(".nav-list");
+
+if (navToggle && navList) {
+    navToggle.addEventListener("click", () => {
+        navList.classList.toggle("is-open");
+    });
+
+    // Закрываю меню при клике по ссылке
+    navList.addEventListener("click", (e) => {
+        if (e.target.tagName === "A") {
+            navList.classList.remove("is-open");
+        }
+    });
+}
+
+//  Здесь я реализую Плавный скролл
+document.addEventListener("click", (e) => {
+    const link = e.target.closest('a[href^="#"]');
+    if (!link) return;
+
+    const targetId = link.getAttribute("href").slice(1);
+    if (!targetId) return;
+
+    const targetEl = document.getElementById(targetId);
+    if (!targetEl) return;
+
+    e.preventDefault();
+    const headerOffset = document.querySelector(".site-header")?.offsetHeight || 0;
+    const elementPosition = targetEl.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPosition = elementPosition - headerOffset - 8;
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+    });
+});</script>
+
+<style>
+/* Базовые стили */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    color: #111827;
+    background-color: #f9fafb;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Контейнеры и сетка */
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.section {
+    padding: 64px 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+/* ХЕДЕР */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(249, 250, 251, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.site-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.main-nav {
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    font-size: 0.95rem;
+    padding: 6px 10px;
+    border-radius: 999px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-list a:hover {
+    background: #111827;
+    color: #f9fafb;
+}
+
+.nav-toggle {
+    display: none;
+    border: none;
+    background: transparent;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+/* ГЛАВНЯ */
+.hero {
+    padding: 72px 0 64px;
+    background: linear-gradient(135deg, #eff6ff, #f9fafb);
+}
+
+.hero-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content h1 {
+    font-size: 2.4rem;
+    margin-bottom: 16px;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    max-width: 480px;
+    margin-bottom: 24px;
+    color: #4b5563;
+}
+
+.hero-image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image {
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.18);
+}
+
+/* Кнопки */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease,
+        transform 0.1s ease;
+}
+
+.btn-primary {
+    background: #111827;
+    color: #f9fafb;
+}
+
+.btn-primary:hover {
+    background: #000;
+    transform: translateY(-1px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #111827;
+    border-color: #111827;
+}
+
+.btn-outline:hover {
+    background: #111827;
+    color: #f9fafb;
+}
+
+/* Две колонки */
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    align-items: center;
+}
+
+.column {
+    min-width: 0;
+}
+
+.img-responsive {
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+}
+
+/* Картоски */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-media img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 16px 18px 18px;
+}
+
+.card-body h3 {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+}
+
+.card-body p {
+    margin: 0 0 12px;
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+.card-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2563eb;
+}
+
+/* СЕРВИСЫ */
+.section-services {
+    background: #f3f4f6;
+}
+
+.section-services .card-media img {
+    height: 200px;
+}
+
+.section-header {
+    margin-bottom: 24px;
+}
+
+/* РЕКИ */
+.section-testimonials {
+    background: #111827;
+    color: #f9fafb;
+}
+
+.testimonial-inner {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 24px;
+    align-items: center;
+}
+
+.avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #60a5fa, #22d3ee);
+}
+
+.testimonial-quote {
+    font-size: 1.4rem;
+    margin: 0 0 8px;
+}
+
+.testimonial-name {
+    margin: 0;
+    opacity: 0.8;
+    font-size: 0.95rem;
+}
+
+/* Опять галлерея */
+.section-gallery {
+    background: #ffffff;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.gallery-grid img {
+    border-radius: 16px;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Снова блог */
+.section-blog .post-preview {
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.section-blog .post-preview:last-child {
+    border-bottom: none;
+}
+
+.section-blog h3 {
+    margin: 0 0 6px;
+    font-size: 1rem;
+}
+
+.section-blog p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+/* контакты */
+.section-contact {
+    background: #f9fafb;
+}
+
+.contact-info,
+.contact-address {
+    font-size: 0.95rem;
+    color: #374151;
+}
+
+.contact-form {
+    background: #ffffff;
+    padding: 20px 20px 22px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+    color: #4b5563;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.3);
+}
+
+/* фууутер */
+.site-footer {
+    border-top: 1px solid #e5e7eb;
+    background: #f9fafb;
+    padding: 16px 0;
+    font-size: 0.9rem;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    margin-right: 12px;
+    color: #4b5563;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    margin-left: 8px;
+    border-radius: 999px;
+    background: #111827;
+    color: #f9fafb;
+    font-size: 0.75rem;
+}
+
+/* Адаптивность под мобилки и всё такое */
+@media (max-width: 900px) {
+    .hero-inner {
+        grid-template-columns: minmax(0, 1fr);
+        text-align: center;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image-wrapper {
+        order: -1;
+    }
+
+    .two-columns {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .testimonial-inner {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        flex-direction: column;
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 8px;
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
+        transform-origin: top right;
+        transform: scale(0.95);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.15s ease, transform 0.15s ease;
+        min-width: 180px;
+    }
+
+    .nav-list.is-open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: scale(1);
+    }
+
+    .nav-list a {
+        display: block;
+        padding: 8px 10px;
+    }
+
+    .section {
+        padding: 48px 0;
+    }
+
+    .hero {
+        padding-top: 64px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}</style>
+</body>
+</html>
