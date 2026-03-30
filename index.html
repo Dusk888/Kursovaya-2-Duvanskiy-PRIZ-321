@@ -3,8 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <title>Интернет‑магазин оптики Дуванского, здесь вы найдёте всё !</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+    <script src="supabase.js"></script>
     
 </head>
 <body>
@@ -232,7 +237,7 @@
 <!-- АССОРТИМЕНТ И КОРЗИНА -->
 <section class="section section-shop" id="shop">
     <div class="container">
-        <h2 class="section-title">Приглашаем ознакомиться с рекомендуемым ассортиментом очков и линз — возможно, Вы найдёте то, что ищете!</h2>
+        <h2 class="section-title">Приглашаем ознакомиться с рекомендуемым ассортиментом очков и линз — возможно, Вы найдёте то, что так давно искали!</h2>
         
         <!-- Корзина -->
         <div class="cart-summary">
@@ -244,7 +249,9 @@
         
         <!-- Товары -->
         <div class="cards-grid">
+          
             <!-- Товар 1 -->
+             
             <article class="card card-cover">
                 <div class="card-media">
                     <img
@@ -296,7 +303,7 @@
             <article class="card card-cover">
                 <div class="card-media">
                     <img
-                        src="Сайт_курсовая\Контейнер_Дуванского.jpg"
+                        src="Сайт_Курсовая\konteiner_linz.jpg"
                         alt="контейнер для линз компании Дуванского"
                     />
                 </div>
@@ -304,14 +311,14 @@
                     <h3>Контейнер гиппоалергенный</h3>
                     <p>Забудьте о пластике, мы ценим ваши глаза !</p>
                     <p class="price">150 руб.</p>
-                    <button class="btn btn-outline add-to-cart" data-id="4" data-name="Раствор для линз" data-price="150">Добавить в корзину</button>
+                    <button class="btn btn-outline add-to-cart" data-id="4" data-name="Контейнер гиппоалергенный" data-price="150">Добавить в корзину</button>
                 </div>
             </article>
             <!-- Товар 5 -->
             <article class="card card-cover">
                 <div class="card-media">
                     <img
-                        src="Сайт_курсовая\Раствор_для_линз.jpg"
+                        src="Сайт_Курсовая\Rastvor_Duvanskogo.jpg"
                         alt="Раствор для линз от компании Дуванского"
                     />
                 </div>
@@ -328,7 +335,7 @@
                 <div class="card-media">
                     <img
                         src="Сайт_курсовая\131.webp"
-                        alt=""
+                        alt="Очки-тренажёр"
                     />
                 </div>
                 <div class="card-body">
@@ -367,7 +374,7 @@
                     <h3>Солнцезащитные накладки</h3>
                     <p>Накладки на очки солнцезащитные</p>
                     <p class="price">1 000 руб.</p>
-                    <button class="btn btn-outline add-to-cart" data-id="8" data-name="Цветные линзы" data-price="1000">Добавить в корзину</button>
+                    <button class="btn btn-outline add-to-cart" data-id="8" data-name="Солнцезащитные накладки" data-price="1000">Добавить в корзину</button>
                 </div>
             </article>
         
@@ -383,7 +390,7 @@
                     <h3>Защитная плёнка для монитора</h3>
                     <p>Предотвращает 99% синего излучения</p>
                     <p class="price">1 300 руб.</p>
-                    <button class="btn btn-outline add-to-cart" data-id="9" data-name="Цветные линзы" data-price="1300">Добавить в корзину</button>
+                    <button class="btn btn-outline add-to-cart" data-id="9" data-name="Защитная плёнка для монитора" data-price="1300">Добавить в корзину</button>
                 </div>
             </article>
         </div>
@@ -506,7 +513,35 @@ document.addEventListener("click", (e) => {
         top: offsetPosition,
         behavior: "smooth",
     });
-});</script>
+});
+</script>
+<script>navToggle.addEventListener("click", () => {
+  navList.classList.toggle("is-open");
+  document.body.style.overflow = navList.classList.contains("is-open") ? "hidden" : "auto";
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const scrollToTopBtn = document.getElementById('scrollToTop');
+
+  // Показываем/скрываем кнопку при скролле
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+      scrollToTopBtn.classList.add('visible');
+    } else {
+      scrollToTopBtn.classList.remove('visible');
+    }
+  });
+
+  // Плавная прокрутка наверх при клике
+  scrollToTopBtn.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
+</script>
 
 <style>
 /* Базовые стили */
@@ -538,6 +573,159 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Сброс для мобильных */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+/* Убираем отступы при скролле на iOS */
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    max-width: none;
+    margin: 0 auto 20px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+
+.gallery-grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); /* Две колонки на очень маленьких экранах */
+    gap: 8px;
+  }
+
+  .gallery-grid img {
+    height: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 16px;
+  }
+
+  .form-group {
+    margin-bottom: 12px;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 10px 12px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .footer-nav a {
+    margin-right: 0;
+    margin: 4px 8px;
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 480px) {
+  .cards-grid {
+    grid-template-columns: 1fr; /* Одна колонка на очень маленьких экранах */
+    gap: 16px;
+  }
+
+  .card {
+    border-radius: 12px;
+  }
+
+  .card-media img {
+    height: 180px; /* Уменьшаем высоту изображений */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .section-shop .container {
+    flex-direction: column;
+  }
+
+  .cart-summary {
+    order: -1;
+    margin-top: 32px;
+    margin-bottom: 0;
+    padding: 16px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .cart-item span:first-of-type {
+    text-align: left;
+    width: 100%;
+  }
+
+  .btn-remove {
+    align-self: flex-end;
+  }
+}
+
 
 /* Контейнеры и сетка */
 .container {
@@ -644,6 +832,29 @@ a:hover {
 .hero-image {
     border-radius: 24px;
     box-shadow: 0 18px 45px rgba(15, 23, 42, 0.18);
+}
+
+.btn-remove {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.2s ease;
+}
+
+.btn-remove:hover {
+  background: #dc2626;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 /* Кнопки */
@@ -1041,7 +1252,52 @@ a:hover {
   background: linear-gradient(90deg, #2563eb, #1d4ed8);
   transition: width 0.1s ease;
   border-radius: 0 2px 2px 0;
-}</style>
+}
+
+#scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba1 100%);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#scrollToTop:hover {
+  background: linear-gradient(135deg, #764ba1 0%, #667eea 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+#scrollToTop.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  #scrollToTop {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+</style>
 
 <script>
 // Логика корзины
@@ -1065,6 +1321,22 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
             cart.push({ id, name, price, quantity: 1 });
         }
         updateCart();
+        // Делегирование событий для динамически создаваемых кнопок удаления
+document.addEventListener('click', function(e) {
+  if (e.target.classList.contains('btn-remove')) {
+    const idToRemove = e.target.getAttribute('data-id');
+    removeFromCart(idToRemove);
+  }
+});
+
+// Функция удаления товара из корзины
+function removeFromCart(id) {
+  const index = cart.findIndex(item => item.id === id);
+  if (index !== -1) {
+    cart.splice(index, 1);
+    updateCart();
+  }
+}
     });
 });
 
@@ -1078,9 +1350,10 @@ function updateCart() {
         const cartItemElement = document.createElement('div');
         cartItemElement.className = 'cart-item';
         cartItemElement.innerHTML = `
-            <span>${item.name} × ${item.quantity}</span>
-            <span>${item.price * item.quantity} руб.</span>
-        `;
+  <span>${item.name} × ${item.quantity}</span>
+  <span>${item.price * item.quantity} руб.</span>
+  <button class="btn-remove" data-id="${item.id}">Удалить</button>
+`;
         cartItemsContainer.appendChild(cartItemElement);
     });
     
@@ -1098,14 +1371,12 @@ checkoutBtn.addEventListener('click', () => {
 </script>
   <script>
     // Скролл-бар (прокрутка для моего магазина-оптики)
- document.addEventListener('DOMContentLoaded', function() {
-    const scrollIndicator = document.querySelector('.scroll-indicator-fill');
-
-    // Проверяем, существует ли элемент индикатора
-    if (!scrollIndicator) {
-      console.warn('Элемент .scroll-indicator-fill не найден. Проверьте HTML.');
-      return;
-    }
+ window.addEventListener('load', function() {
+  const scrollIndicator = document.querySelector('.scroll-indicator-fill');
+  if (!scrollIndicator) {
+    console.warn('Элемент .scroll-indicator-fill не найден.');
+    return;
+  }
 
     function updateScrollIndicator() {
       const windowHeight = window.innerHeight;
@@ -1967,20 +2238,15 @@ checkoutBtn.addEventListener('click', () => {
       },
   
       // Тут обновляею информацию о размере контейнера
-      _onResize: function(e) {
-        var screen = screenInfo(e)
-        this._width = screen.width
-        this._height = screen.height
-  
-        if (this._canvas) {
-          this._canvas.width = this._width
-          this._canvas.height = this._height
-  
-          if (this._context) {
-            this._context.globalAlpha = this._options.colorAlpha
-          }
-        }
-      },
+_onResize: function(e) {
+  this._width = window.innerWidth;
+  this._height = window.innerHeight;
+  if (this._canvas) {
+    this._canvas.width = this._width;
+    this._canvas.height = this._height;
+  }
+  this._context && this._context.clearRect(0, 0, this._width, this._height);
+},
   
       // Тут обновляю информацию о размере
       _onScroll: function(e) {
@@ -2008,5 +2274,17 @@ checkoutBtn.addEventListener('click', () => {
 </script>
 <script src="ПРИZ.js"></script>
 <script src="script.js"></script>
+<!-- Кнопка «Наверх» -->
+<button id="scrollToTop" aria-label="Вернуться к началу страницы">
+  ↑
+</button>
+<script>
+// Инициализируем клиент
+const supabaseUrl = 'https://your-project-ref.supabase.co'; // из Settings → API
+const supabaseKey = 'your-anon-key'; // из Settings → API
+const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+// Глобальная переменная для хранения корзины
+let cart = [];</script>
 </body>
 </html>
